@@ -1,0 +1,36 @@
+{
+  "clientes": [
+    {
+      "nombre": "Juan",
+      "empresa": "dsf",
+      "email": "ds@mas.com",
+      "telefono": "84546546",
+      "notas": "dsf dsfdsg  juyg",
+      "id": 1
+    },
+    {
+      "nombre": "Hazael",
+      "empresa": "hola",
+      "email": "ds@mas.com",
+      "telefono": "84546546",
+      "notas": "El cliente 4",
+      "id": 4
+    },
+    {
+      "nombre": "Hazael 6",
+      "empresa": "hola 5",
+      "email": "ds@mas.com",
+      "telefono": "84546546",
+      "notas": "El cliente 6",
+      "id": 6
+    },
+    {
+      "nombre": "Mayra",
+      "empresa": "Criminologia",
+      "email": "ds@mas.com",
+      "telefono": "84546546",
+      "notas": "Mayra cotiza",
+      "id": 7
+    }
+  ]
+}
