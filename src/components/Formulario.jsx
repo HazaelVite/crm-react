@@ -26,7 +26,7 @@ export const Formulario = ({cliente, cargando}) => {
     try {
       let respuesta
       if(cliente.id) {
-        const url = `https://my-json-server.typicode.com/HazaelVite/crm-react/clientes/${cliente.id}`
+        const url = `${import.meta.env.VITE_API_URL}/${cliente.id}`
         respuesta = await fetch(url, {
           method: 'PUT',
           headers: {
@@ -35,7 +35,7 @@ export const Formulario = ({cliente, cargando}) => {
           body: JSON.stringify(values)
         })
       } else {
-        const url = 'https://my-json-server.typicode.com/HazaelVite/crm-react/clientes'
+        const url = import.meta.env.VITE_API_URL
         respuesta = await fetch(url, {
           method: 'POST',
           headers: {
