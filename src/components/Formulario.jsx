@@ -26,7 +26,7 @@ export const Formulario = ({cliente, cargando}) => {
     try {
       let respuesta
       if(cliente.id) {
-        const url = `http://localhost:4000/clientes/${cliente.id}`
+        const url = `https://my-json-server.typicode.com/HazaelVite/crm-react/clientes/${cliente.id}`
         respuesta = await fetch(url, {
           method: 'PUT',
           headers: {
@@ -35,7 +35,7 @@ export const Formulario = ({cliente, cargando}) => {
           body: JSON.stringify(values)
         })
       } else {
-        const url = 'http://localhost:4000/clientes'
+        const url = 'https://my-json-server.typicode.com/HazaelVite/crm-react/clientes'
         respuesta = await fetch(url, {
           method: 'POST',
           headers: {

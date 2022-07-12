@@ -12,7 +12,7 @@ export const VerCliente = () => {
     setCargando(!cargando)
     const obtenerClienteAPI = async() => {
       try {
-        const url = `http://localhost:4000/clientes/${id}`
+        const url = `https://my-json-server.typicode.com/HazaelVite/crm-react/clientes/${id}`
         const respuesta = await fetch(url)
         const resultado = await respuesta.json()
         setCliente(resultado)

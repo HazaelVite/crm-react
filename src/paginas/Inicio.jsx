@@ -9,7 +9,7 @@ export const Inicio = () => {
   useEffect(() => {
     const obtenerClientesAPI = async () => {
       try {
-        const url = 'http://localhost:4000/clientes'
+        const url = 'https://my-json-server.typicode.com/HazaelVite/crm-react/clientes'
         const respuesta = await fetch(url)
         const resultado = await respuesta.json()
         setClientes(resultado)
@@ -25,7 +25,7 @@ export const Inicio = () => {
     const confirmar = confirm('¿Deseas eliminar este cliente?')
     if (confirmar) {
       try {
-        const url = `http://localhost:4000/clientes/${id}`
+        const url = `https://my-json-server.typicode.com/HazaelVite/crm-react/clientes/${id}`
         const respuesta = await fetch(url, {
           method: 'DELETE',
           headers: {
